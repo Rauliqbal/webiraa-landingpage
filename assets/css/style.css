@@ -106,6 +106,54 @@ section {
    height: auto;
 }
 
+/* RESUME */
+
+.title-resume {
+   font-size: 24px;
+   color: var(--primary);
+   letter-spacing: 0.1rem;
+   margin-bottom: 1rem;
+}
+.content-table {
+   border-left: 2px var(--primary) solid;
+   padding-left: 1.5rem;
+   position: relative;
+}
+
+.content-table::before {
+   content: "";
+   top: 0;
+   left: -11px;
+   position: absolute;
+   border: 4px var(--primary) solid;
+   background-color: #fff;
+   border-radius: 100px;
+   height: 4px;
+   width: 4px;
+   padding: 6px;
+}
+
+.content-table .date {
+   font-weight: 700;
+   font-size: 12px;
+   color: var(--primary);
+   padding: 2px 12px;
+   border: 2px var(--primary) solid;
+   border-radius: 50px;
+   display: inline-flex;
+}
+
+.content-table .tittle-table {
+   font-size: 22px;
+   font-weight: 600;
+   margin: 0;
+}
+
+.content-table .desc {
+   font-size: 16px;
+   margin-bottom: 0;
+}
+
 /* TAMPILAN DESKTOP */
 @media screen and (min-width: 1024px) {
    .navbar-rr .navbar-collapse {
